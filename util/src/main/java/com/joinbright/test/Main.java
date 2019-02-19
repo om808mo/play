@@ -1,3 +1,4 @@
+package com.joinbright.test;
 import java.io.IOException;
 import java.net.UnknownHostException;
 
@@ -14,26 +15,26 @@ public class Main {
 	private static final Logger LOG=Logger.getLogger(Main.class);
 	public static void main(String[] args) throws UnknownHostException,IpNotRightException,IOException {
 		if(args.length==0){
-			System.out.println("--help query usage!");
+			LOG.info("--help query usage!");
 		}else{
 			if(args.length==1){
 				if("--help".equals(args[0])){
-					System.out.println("Usage:[option] ...");
-					System.out.println("-s		exec system command!");
-					System.out.println("-p		scan port");
-					System.out.println("e.g:java -jar util.jar 'pwd'");
-					System.out.println("e.g:java -jar util.jar 192.168.10.121 10-24");
+					LOG.info("Usage:[option] ...");
+					LOG.info("-s		exec system command!");
+					LOG.info("-p		scan port");
+					LOG.info("e.g:java -jar util.jar 'pwd'");
+					LOG.info("e.g:java -jar util.jar 192.168.10.121 10-24");
 				}else if("-s".equals(args[0])){
-					System.out.println("Input command!");
+					LOG.info("Input command!");
 				}else if("-p".equals(args[0])){
-					System.out.println("Input ip and port!");
+					LOG.info("Input ip and port!");
 				}else{
-					System.out.println("invalid option");
-					System.out.println("--help query usage!");
+					LOG.info("invalid option");
+					LOG.info("--help query usage!");
 				}
 			}else{
 				if("-s".equals(args[0])){
-					System.out.println(OSUtil.exec(args[1]));
+					LOG.info(OSUtil.exec(args[1]));
 				}else if("-p".equals(args[0])){
 					if(args.length==3){
 						String ip=args[1];
@@ -41,8 +42,8 @@ public class Main {
 							OSUtil.scan(ip,args[2]);
 						}
 					}else{
-						System.out.println("invalid option");
-						System.out.println("--help query usage!");
+						LOG.info("invalid option");
+						LOG.info("--help query usage!");
 					}
 				}
 			}

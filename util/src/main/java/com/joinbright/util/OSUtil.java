@@ -140,9 +140,8 @@ public class OSUtil {
 			try{
 				socket=new Socket(ip,port);
 				flag=true;
-				LOG.info(ip+"'s port "+port+" is connected!");
 			}catch(Exception e){
-				LOG.info(ip+"'s port "+port+" is not connected!");
+				flag=false;
 			}finally{
 				if(socket!=null){
 					socket.close();

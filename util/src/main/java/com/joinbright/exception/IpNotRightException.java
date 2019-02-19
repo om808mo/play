@@ -1,5 +1,3 @@
 package com.joinbright.exception;
 
-public class IpNotRightException extends Exception{
-
-}
+public class IpNotRightException extends Exception{}
