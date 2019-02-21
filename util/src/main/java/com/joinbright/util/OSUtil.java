@@ -63,10 +63,6 @@ public class OSUtil {
 		}
 		return out.toString();
 	}
-	public static void main(String[] args) {
-		String s="aaa";
-		System.out.println(Integer.parseInt(s));
-	}
 	/**
 	 * É¨ÃèipµÄ¶Ë¿Ú
 	 * @param ip
@@ -119,7 +115,7 @@ public class OSUtil {
 		String pattern="((25[0-5]|2[0-4]\\d|((1\\d{2})|([1-9]?\\d))).){3}(25[0-5]|2[0-4]\\d|((1\\d{2})|([1-9]?\\d)))";
 		if(!Pattern.matches(pattern,ip)){
 			throw new IpNotRightException();
-		}		
+		}
 		return InetAddress.getByName(ip).isReachable(3000);
 	}
 	/**
