@@ -1,4 +1,4 @@
-package com.joinbright.socket;
+package com.jb.socket;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.net.Socket;
@@ -7,12 +7,12 @@ import java.util.Scanner;
 
 import org.apache.log4j.Logger;
 
-import com.joinbright.exception.IpNotRightException;
-import com.joinbright.exception.PortNotRightException;
-import com.joinbright.util.NetUtil;
+import com.jb.exception.IpNotRightException;
+import com.jb.exception.PortNotRightException;
+import com.jb.util.NetUtil;
  
 public class ChatClient {
-	private static final Logger LOG=Logger.getLogger(NetUtil.class);
+	private static final Logger LOG=Logger.getLogger(ChatClient.class);
 	public static void main(String[] args) throws IpNotRightException, PortNotRightException, IOException {
 		if(args.length<2){
 			LOG.info("Usage:ChatClient ip port");

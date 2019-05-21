@@ -1,4 +1,4 @@
-package com.joinbright.socket;
+package com.jb.socket;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.net.ServerSocket;
@@ -7,11 +7,11 @@ import java.util.Scanner;
 
 import org.apache.log4j.Logger;
 
-import com.joinbright.exception.PortNotRightException;
-import com.joinbright.util.NetUtil;
- 
+import com.jb.exception.PortNotRightException;
+import com.jb.util.NetUtil;
+
 public class ChatServer {
-	private static final Logger LOG=Logger.getLogger(NetUtil.class);
+	private static final Logger LOG=Logger.getLogger(ChatServer.class);
 	public static void main(String[] args) throws IOException,NumberFormatException,PortNotRightException{
 		if(args.length==0){
 			LOG.info("Usage:ChatServer port");

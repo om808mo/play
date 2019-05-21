@@ -1,0 +1,10 @@
+eclipse.preferences.version=1
+encoding//src/main/java/Main.java=UTF-8
+encoding//src/main/java/com/jb/enu/FileExtendNameEnum.java=UTF-8
+encoding//src/main/java/com/jb/exception/FileNotIsDirectoryException.java=UTF-8
+encoding//src/main/java/com/jb/exception/IpNotRightException.java=UTF-8
+encoding//src/main/java/com/jb/exception/PortNotRightException.java=UTF-8
+encoding//src/main/java/com/jb/processor=UTF-8
+encoding//src/main/java/com/jb/util/NetUtil.java=UTF-8
+encoding//src/main/java/com/jb/util/OSUtil.java=UTF-8
+encoding/<project>=gbk
